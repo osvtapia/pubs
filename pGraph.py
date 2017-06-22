@@ -68,7 +68,7 @@ class PGraph(pObject.PObject):
             
         return count
     
-    def nodes(self):
+    def getNodes(self):
         nodes = list()
         for node in self._rootNodes:
             nodes.append(node)
@@ -107,7 +107,7 @@ class PGraph(pObject.PObject):
         return nodeNames
     
     def getNodeByName(self, name):
-        for node in self.nodes():
+        for node in self.getNodes():
             if name == node.getName():
                 return node
         return None
