@@ -1,7 +1,7 @@
 '''
 Node will track and manage all data with-in a node
 '''
-import ordereddict
+import pDict
 import pAttribute
 import pObject
 
@@ -44,8 +44,8 @@ class PNode(pObject.PObject):
 
         #declare class variable
         self._parent = parent
-        self._children = ordereddict.OrderedDict()
-        self._attributes = ordereddict.OrderedDict()
+        self._children = pDict.PDict()
+        self._attributes = pDict.PDict()
         self._dirty = True
         self._running = False
         self._enabled = True
