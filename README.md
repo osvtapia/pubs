@@ -10,6 +10,6 @@ a.getChildren()
 d = graph.addNode('D')
 d.getChildren()
 c2 = graph.addNode('C',d)
-graph.nodes()
+graph.getNodes()
 graph.log()
 ```
